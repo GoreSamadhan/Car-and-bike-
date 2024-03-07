@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+:root {
+  --primary--color: #121212cf;
+  --secondary--color: #fff;
+  --third--color: #f2e6ff;
+  --four--color: #180047;
+}
+.lg-heading{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--four--color);
+  text-align: center;
+  padding: 0.2rem;
+}
+.outer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* start */
+.form-img{
+  background: var(--four--color);
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin:auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  border:#e6e6ff 2px solid;
+  background-color: var(--secondary--color);
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+.container-form{
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  margin-top:0;
+  flex-wrap: wrap;
+  height:700px;
+}
+.form-img{
+  background-color: var(--four--color);
+  border-radius: 15px 0 0 15px;
+}
+.container-form form, .form-img{
+  width: 50%;
+  height:699px;
+  border: 2px solid;
+}
+.form-img img{
+  width:100%;
+  border-radius:10px;
+  display: block;
+  margin-top:100px;
+}
+.container-form form{
+  border: 1px solid var(--four--color);
+  border-radius: 0 15px 15px 0;
+}
+.container-form{
+  display: flex;
+  justify-content: center;
+}
+.container-form form{
+  width: 45%;
+}
+.form .input-box {
+  width: 80%;
+}
+.input-box label{
+  color: var(--four--color);
+  padding: 1rem;
+  width: 100%;
+  font-weight: 500;
+}
+.input-box input {
+  margin: 0.5rem;
+}
+.form :where(.input-box input) {
+  position: relative;
+  width: 80%; 
+  height: 40px;  
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary--color);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0 0.5rem; 
+}
+
+.form .Sign{
+  margin-top: 10px;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+.form button {
+  width: 20%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #180047;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+.form button:hover {
+  background:#fff;
+  color:#180047;
+  border:1px solid #180047;
+  font-weight: 500;
+}
+.Sign a{
+  text-decoration: none;
+  color: red;
+}
+.form p {
+  margin-top: 10px;
+}
+.form input::placeholder {
+    font-size: 1rem;
+}
+.radio{
+    margin:0 1rem;
+}
+.container .form{
+  margin-top:0px;
+  height: 699px;
+}
+/* end */
+.form .input-box {
+  width: 100%;
+  margin-top:1rem;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  width: 80%;
+  height: 40px;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+  .container-form{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    height: auto;
+  }
+  .container-form form, .form-img{
+    width: 100%;
+    height:auto;
+    order: 0;
+    border-radius: 0;
+  }
+.form-img img{
+  margin-top:0px;
+}
+.container .form {
+  height: auto;
+}
+  .input-box label{
+    padding: 0.2rem 0.5rem;
+  }
+  .form button {
+    width: 40%;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+} 
+
+/* More than 768 */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    .form-img img {
+      margin-top: 50%;
+  }
+  .form button {
+    width: 40%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+  }

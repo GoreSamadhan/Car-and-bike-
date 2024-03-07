@@ -1,0 +1,119 @@
+/* Reset some default browser styles */
+body, h2, form, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #F2E6FF;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+
+}
+
+.vehicle-form {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox-group label {
+  font-weight: bold;
+
+}
+
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 800px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Add this responsive style for smaller screens */
+@media screen and (max-width: 600px) {
+  .form-section {
+      flex-direction: column;
+  }
+
+  .input-box,
+  .checkbox-group {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  .image-section {
+      flex-direction: column;
+  }
+
+  .image-section .input-box {
+      width: 100%;
+  }
+}

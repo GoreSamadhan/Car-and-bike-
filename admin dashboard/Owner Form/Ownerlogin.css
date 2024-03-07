@@ -1,0 +1,182 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins sans-serif;
+}
+:root {
+  --primary--color: #121212cf;
+  --secondary--color: #fff;
+  --third--color: #f2e6ff;
+  --four--color: #180047;
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.outer-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-img{
+  background: var(--four--color);
+}
+.container {
+  margin: 50px 30px 0 0;
+  max-width: 1200px;
+  width: 90%;
+  margin:auto;
+  height: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  border:#e6e6ff 2px solid;
+  background-color: var(--secondary--color);
+  margin-top:3rem;
+}
+.container-form{
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  margin-top:0;
+  flex-wrap: wrap;
+}
+
+.container-form form, .form-img{
+  width: 50%;
+  height:400px;
+}
+.form-img{
+  background-color: var(--four--color);
+  border-radius: 0 15px 15px 0;
+}
+.form-img img{
+  width:100%;
+  border-radius:10px;
+}
+.container-form form{
+  border: 1px solid var(--four--color);
+  border-radius: 15px 0 0 15px;
+}
+.container header {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--four--color);
+  font-weight: 600;  
+  margin-bottom: 1rem;
+}
+.container-form{
+  display: flex;
+  justify-content: center;
+}
+.container-form form{
+  width: 45%;
+}
+
+.form .input-box {
+  width: 80%;
+  margin-top: 20px;
+  height: 60px;
+}
+.input-box label {
+  color: var(--four--color);
+  padding: 1rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.input-box input {
+  margin: 0.5rem;
+}
+
+.form :where(.input-box input) {
+  position: relative;
+  width: 100%; 
+  height: 40px;  
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary--color);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0 0.5rem; 
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+.form .Sign{
+  margin-top: 10px;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+.form button {
+  width: 80%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #180047;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0 8px;
+}
+.form button:hover {
+  background:#fff;
+  color:#180047;
+  border:1px solid #180047;
+  font-weight: 500;
+}
+.Sign a{
+  text-decoration: none;
+  color: #FF725E;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+  .container-form{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .container-form form, .form-img{
+    width: 100%;
+    height:auto;
+    order: 0;
+    border-radius: 0;
+  }
+  .form-img{
+    order: 1;
+  }
+  .container-form form{
+    order: 2;
+  }
+  .input-box label{
+    padding: 0.2rem 0.5rem;
+  }
+  .form button {
+    margin-top: 1rem;
+  }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    .container-form form, .form-img {
+      width: 50%;
+      height: 300px;
+  }
+  }
